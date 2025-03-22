@@ -8,7 +8,7 @@ Overview
 
 This document outlines a systematic approach to hack, reverse engineer, and eventually develop custom Zephyr RTOS-based firmware for the Xiaomi Mi Band 4 fitness tracker. This project aims to understand the device's hardware components, communication protocols, and system architecture to create an open-source alternative firmware.
 
-.. figure:: https://drive.usercontent.google.com/download?id=1TjpdF-89aOikg1lzj9VS3m9JZ4q_hGcH&export=download&authuser=0&confirm=t&uuid=f0069590-6bd9-401d-a737-b16cb3392476&at=AEz70l7GElvPnv9nwfu52wCaJLIr:1742584772139
+.. figure:: https://drive.usercontent.google.com/download?id=1g44uAQ1IyI3A14zDLAE7VUMIhdhL3se8&export=download&authuser=0&confirm=t&uuid=b97bf037-8b2b-487d-a0da-9e7c0ccee62f&at=AEz70l5TFz3V6LUfQkImtMBsGYIA:1742656519586
 
 Project Phases
 *************
@@ -20,16 +20,9 @@ Phase 1: Hardware Analysis
 * Identify the MCU, display controller, sensors, and Bluetooth module
 * Map debug ports (SWD, UART, JTAG) and test points
 * Document PCB layout and component connections
-
-Phase 2: Reverse Engineering
-==========================
-
 * Extract firmware through debug interfaces if accessible
-* Analyze Bluetooth LE communication protocols and services
-* Reverse engineer core firmware functions and bootloader
-* Document hardware access methods and security features
 
-Phase 3: Hardware Interfacing
+Phase 2: Hardware Interfacing
 ===========================
 
 * Establish connections to debug and communication interfaces
@@ -37,21 +30,13 @@ Phase 3: Hardware Interfacing
 * Reverse engineer display protocol and initialization sequence
 * Create test code to verify peripheral access
 
-Phase 4: Zephyr Port Development
+Phase 3: Zephyr Port Development
 ==============================
 
 * Create device tree and board support package for Mi Band 4
 * Implement drivers for display, sensors, and power management
 * Configure Bluetooth LE stack and hardware abstraction layer
 * Develop bootloader compatible with Zephyr RTOS
-
-Technical Challenges
-******************
-
-* Security features may prevent custom firmware loading
-* Resource constraints (memory, power, processing)
-* Limited documentation for proprietary components
-* Sensor calibration and accuracy requirements
 
 Tools Required
 ************
@@ -70,13 +55,6 @@ Software Tools
 * Zephyr SDK and GCC ARM toolchain
 * Bluetooth protocol analyzers
 * Custom development and debugging utilities
-
-Community Resources
-*****************
-
-* Existing Mi Band hacking projects (e.g., Gadgetbridge)
-* ARM Cortex-M and Zephyr development communities
-* Fitness tracker reverse engineering forums
 
 Legal and Ethical Considerations
 ******************************
