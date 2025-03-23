@@ -27,7 +27,6 @@ Phase 2: Hardware Interfacing
 
 * Establish connections to debug and communication interfaces
 * Explore sensor protocols and register maps (I2C, SPI)
-* Reverse engineer display protocol and initialization sequence
 * Create test code to verify peripheral access
 
 Phase 3: Zephyr Port Development
@@ -36,7 +35,6 @@ Phase 3: Zephyr Port Development
 * Create device tree and board support package for Mi Band 4
 * Implement drivers for display, sensors, and power management
 * Configure Bluetooth LE stack and hardware abstraction layer
-* Develop bootloader compatible with Zephyr RTOS
 
 Tools Required
 ************
@@ -46,15 +44,14 @@ Hardware Tools
 
 * Digital multimeter, logic analyzer, oscilloscope
 * Fine-tip soldering equipment and microscope
-* SWD/JTAG debugger (J-Link, ST-Link)
+* SWD/JTAG debugger (J-Link)
 
 Software Tools
 ============
 
-* Firmware analysis tools (IDA Pro, Ghidra)
+* Firmware analysis tools (Ghidra)
 * Zephyr SDK and GCC ARM toolchain
-* Bluetooth protocol analyzers
-* Custom development and debugging utilities
+* ezFlashCLI
 
 Legal and Ethical Considerations
 ******************************
