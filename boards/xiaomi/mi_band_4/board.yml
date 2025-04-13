@@ -1,6 +1,0 @@
-board:
-  name: mi_band_4
-  full_name: Mi Band 4 Wearable
-  vendor: renesas
-  socs:
-  - name: da14697

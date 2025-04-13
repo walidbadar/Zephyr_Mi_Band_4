@@ -1,4 +1,0 @@
-decvice CORTEX-M33
-if SWD
-speed 40000
-connect

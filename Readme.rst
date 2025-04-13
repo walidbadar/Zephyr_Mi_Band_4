@@ -1,24 +1,28 @@
 .. _mi_band_4:
 
-Mi Band 4: Reverse Engineering for Zephyr Firmware Development
-######################################################################
+ZSBand: Reverse Engineering of Xiaomi Mi Band 4 for Zephyr Smart Band Firmware
+##############################################################################
 
 Overview
 ********
 
-This document outlines a systematic approach to hack, reverse engineer, and eventually develop custom Zephyr RTOS-based firmware for the Xiaomi Mi Band 4 fitness tracker. This project aims to understand the device's hardware components, communication protocols, and system architecture to create an open-source alternative firmware.
+This document outlines a systematic approach to hack, reverse engineer, and eventually develop custom Zephyr RTOS based firmware for the Xiaomi Mi Band 4. This project aims to understand the device's hardware components, communication protocols, and system architecture to create an open-source alternative firmware.
 
-.. figure:: https://github.com/walidbadar/Zephyr_Mi_Band_4/blob/main/resources/images/Cover.png
+.. figure:: https://github.com/walidbadar/Zephyr_Mi_Band_4/blob/main/resources/images/cover.jpg
+
+System Architecture
+*************
+.. figure:: https://github.com/walidbadar/Zephyr_Mi_Band_4/blob/main/resources/images/block_diagram.png
 
 Project Phases
 *************
 
 Phase 1: Hardware Analysis
 =========================
-.. figure:: https://github.com/walidbadar/Zephyr_Mi_Band_4/blob/main/resources/images/Mi-Band-4_PCB.jpg
 * Map debug ports (SWD, UART) and test points
 * Document PCB layout and component connections
 * Extract firmware through debug interfaces if accessible
+.. figure:: https://github.com/walidbadar/Zephyr_Mi_Band_4/blob/main/resources/images/circuit-board.jpg
 
 Phase 2: Hardware Interfacing
 ===========================
@@ -30,7 +34,7 @@ Phase 2: Hardware Interfacing
 Phase 3: Zephyr Port Development
 ==============================
 
-* Create device tree and board support package for Mi Band 4
+* Create device tree source for Mi Band 4
 * Implement drivers for display, sensors, and power management
 
 Tools Required
@@ -39,8 +43,9 @@ Tools Required
 Hardware Tools
 ============
 
-* Digital multimeter, logic analyzer, oscilloscope
-* SWD/JTAG debugger (J-Link)
+* `Logic Analyzer <https://www.saleae.com/>`_
+* `SWD debug probe (J-Link) <https://www.segger.com/products/debug-probes/j-link/>`_
+* `Raspberry Pi <https://www.raspberrypi.com/>`_
 
 Software Tools
 ============
@@ -48,7 +53,7 @@ Software Tools
 * `Firmware analysis tools (Ghidra) <https://ghidra-sre.org/>`_
 * `Zephyr SDK (Getting Started) <https://docs.zephyrproject.org/latest/develop/getting_started/index.html>`_
 * `ezFlashCLI <https://github.com/ezflash/ezFlashCLI>`_
-* `J-Link <https://www.segger.com/downloads/jlink/>`_
+* `openOCD <https://github.com/openocd-org/openocd>`_
 
 Legal and Ethical Considerations
 ******************************
